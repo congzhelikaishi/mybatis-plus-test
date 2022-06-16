@@ -17,6 +17,7 @@ import java.sql.Timestamp;
 @TableName("user")
 public class User extends Model<User> {
 
+
     // 对应数据库中的主键（uuid 自增id 雪花算法 redis zookeeper）
     @TableId(type = IdType.ASSIGN_ID)  // 使用mybatis-plus自带雪花算法生成
     private Long id;
